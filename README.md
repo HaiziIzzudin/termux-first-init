@@ -10,7 +10,8 @@ pkg upgrade && \
 pkg install openssh -y && \
 passwd && \
 whoami && \
-ifconfig
+ifconfig && \
+sshd
 ```
 On your pc, please enter your ssh command like so: 
 ```bash
