@@ -7,7 +7,7 @@ Just installed termux fresh? Here's some guide before you get started on using t
 # 2. Install openssh and setup for ssh
 ```bash
 pkg upgrade && \
-pkg install openssh && \
+pkg install openssh -y && \
 passwd && \
 whoami && \
 ifconfig
@@ -28,6 +28,6 @@ Select mirror group, and the one on europe.
 # 4. Once entered, install tmux
 ```bash
 pkg upgrade && \
-pkg install tmux && \
+pkg install tmux -y && \
 tmux
 ```
