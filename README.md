@@ -4,9 +4,14 @@ Just installed termux fresh? Here's some guide before you get started on using t
 # 1. Installing termux
 [here](https://github.com/termux/termux-app/releases)
 
-# 2. Install openssh and setup for ssh
+# 2. change repo
 ```bash
-pkg upgrade && \
+termux-change-repo
+```
+
+# 3. Install openssh and setup for ssh
+```bash
+pkg upgrade -y && \
 pkg install openssh -y && \
 passwd && \
 whoami && \
@@ -18,12 +23,6 @@ On your pc, please enter your ssh command like so:
 ssh <username>@<lan_ip_addr> -p8022
 ```
 
-# 3. Optimizing termux
-Please enter commands below in order:
-```bash
-pkg upgrade && \
-termux-change-repo
-```
 Select mirror group, and the one on europe.
 
 # 4. Once entered, install tmux
