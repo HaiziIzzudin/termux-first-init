@@ -39,13 +39,13 @@ pkg install htop -y && htop
 
 # 6. Install local LLM on termux, with gemma:2b model
 ```bash
-pkg install proot-distro && \
+pkg install proot-distro -y && \
 pd install debian && \
 pd login debian
 ```
 once logged in, c&p command below
 ```bash
-apt update && apt upgrade -y && apt install tmux && \
+apt update && apt upgrade -y && apt install tmux -y && \
 curl -fsSL https://ollama.com/install.sh | sh && \
 tmux new -s llm
 ```
