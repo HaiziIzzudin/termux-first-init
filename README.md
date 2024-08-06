@@ -31,3 +31,7 @@ pkg upgrade && \
 pkg install tmux -y && \
 tmux
 ```
+# 5. htop
+```bash
+pkg install htop -y && htop
+```
