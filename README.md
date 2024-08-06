@@ -35,3 +35,25 @@ tmux
 ```bash
 pkg install htop -y && htop
 ```
+
+
+# 6. Install local LLM on termux, with gemma:2b model
+```bash
+pkg install proot-distro && \
+pd install debian && \
+pd login debian
+```
+once logged in, c&p command below
+```bash
+apt update && apt upgrade -y && apt install tmux && \
+curl -fsSL https://ollama.com/install.sh | sh && \
+tmux new -s llm
+```
+once into termux, do
+```bash
+ollama serve
+```
+then on your keyboard, press `ctrl + b`, then `shift + "`
+```bash
+ollama run gemma:2b
+```
