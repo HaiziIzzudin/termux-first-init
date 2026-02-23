@@ -1,3 +1,4 @@
+termux-setup-storage && \
 yes "" | pkg upgrade -y && \
 yes "" | pkg install openssh iproute2 ffmpeg -y && \
 user=whoami && \
