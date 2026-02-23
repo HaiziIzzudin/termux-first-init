@@ -9,6 +9,8 @@ curl -fsSL -k https://iziizz.com/termux | bash
 ### Or scan the QR text below, then paste in termux.
 ![alt text](qr.png)
 
+### Do verify the originality of the link first, if you have trust issues with random online link!
+
 # 1. Installing termux
 [here](https://github.com/termux/termux-app/releases)
 
