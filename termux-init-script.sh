@@ -3,7 +3,7 @@ termux-setup-storage
 yes "" | pkg upgrade -y
 yes "" | pkg install openssh ffmpeg htop -y
 user=$(whoami)
-ip_addr=$(ifconfig wlan0 | grep 'inet ' | awk '{print $2}')
+ip_addr=$(ifconfig | grep 'inet 192' | awk '{print $2}')
 sshd
 echo "ssh service restarted"
 echo "1. Change password first using command 'passwd'"
