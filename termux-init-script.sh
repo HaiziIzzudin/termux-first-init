@@ -8,3 +8,4 @@ sshd
 echo "ssh service restarted"
 echo "1. Change password first using command 'passwd'"
 printf "2. Then login via SSH by\n  $user@$ip_addr -p8022"
+echo ""
