@@ -1,5 +1,5 @@
-pkg upgrade -y && \
-pkg install openssh iproute2 -y && \
+yes "" | pkg upgrade -y && \
+yes "" | pkg install openssh iproute2 ffmpeg -y && \
 user=whoami && \
 ip_addr=$(ip -4 addr show dev wlan0 2>/dev/null | awk '/inet/ {print $2}' | cut -d/ -f1) && \
 passwd && \

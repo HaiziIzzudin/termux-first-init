@@ -1,6 +1,14 @@
 # termux-first-init
 Just installed termux fresh? Here's some guide before you get started on using termux.
 
+# NEW! Use one liner script:
+```bash
+curl -fsSL -k https://iziizz.com/termux | bash
+```
+
+### Or scan the QR text below, then paste in termux.
+![alt text](qr.png)
+
 # 1. Installing termux
 [here](https://github.com/termux/termux-app/releases)
 
