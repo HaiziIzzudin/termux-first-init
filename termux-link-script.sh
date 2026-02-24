@@ -6,3 +6,4 @@ ip_addr=$(ifconfig | grep 'inet 192' | awk '{print $2}')
 port=8022
 echo "Fetch device model done"
 curl -X POST http://$host_ip_address:8000/register -H "Content-Type: application/json" -d '{"device_model":"'$device_model'","user":"'$user'","ip_address":"'$ip_addr'","port":'$port'}'
+echo ""
