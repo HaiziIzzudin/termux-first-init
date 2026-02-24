@@ -1,4 +1,4 @@
-read -p "Enter Host Machine IP address: " host_ip_address
+read -p "Enter Host Machine IP address: " host_ip_address </dev/tty
 echo $host_ip_address
 device_model=$(termux-info | awk '/^Device model:/{getline; gsub(/^[ \t]+|[ \t]+$/,""); print; exit}')
 user=$(whoami)

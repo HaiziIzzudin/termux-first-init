@@ -11,6 +11,11 @@ curl -fsSL -k https://iziizz.com/termux | bash
 
 ### Do verify the originality of the link first, if you have trust issues with random online link!
 
+### Then, run this to link to your host machine:
+```bash
+curl -fsSL -k -o /tmp/script.sh https://iziizz.com/link && bash /tmp/script.sh
+```
+
 # 1. Installing termux
 [here](https://github.com/termux/termux-app/releases)
 
