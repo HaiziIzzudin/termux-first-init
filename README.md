@@ -11,7 +11,11 @@ curl -fsSL -k https://iziizz.com/termux | bash
 
 ### Do verify the originality of the link first, if you have trust issues with random online link!
 
-### Then, run this to link to your host machine:
+### Then, run this to change password for SSH:
+```bash
+passwd
+```
+### Finally, run this to link to your host machine:
 ```bash
 curl -fsSL -k https://iziizz.com/link | bash
 ```
