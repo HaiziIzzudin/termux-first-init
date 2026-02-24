@@ -16,7 +16,8 @@ echo ""
 echo ""
 read -p "Please generate ssh-keygen from your host machine (where to connect to). Command:\n\nssh-keygen -t rsa -b 2048 -f id_rsa\n\nHost machine id_rsa: " id_rsa_host </dev/tty
 
-ssh-copy-id -p 8022 -i $id_rsa_host $ip_addr
+# ssh-copy-id -p 8022 -i $id_rsa_host $ip_addr
+printf '%s\n' "$id_rsa_host" >> ~/.ssh/authorized_keys
 
 echo ""
 echo ""
