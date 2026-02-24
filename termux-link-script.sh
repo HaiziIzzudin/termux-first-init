@@ -1,4 +1,5 @@
 read -p "Enter Host Machine IP address: " host_ip_address
+echo $host_ip_address
 device_model=$(termux-info | awk '/^Device model:/{getline; gsub(/^[ \t]+|[ \t]+$/,""); print; exit}')
 user=$(whoami)
 ip_addr=$(ifconfig | grep 'inet 192' | awk '{print $2}')
